@@ -1,5 +1,8 @@
 from DATABASE.db_connection import get_connection
-from data_structures.avl_tree import AVLTree
+try:
+    from data_structures.avl_tree import AVLTree
+except ModuleNotFoundError:
+    from data_structures.AVL_tree import AVLTree
 
 
 class FlightService:
